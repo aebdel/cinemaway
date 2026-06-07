@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemaway | Services</title>
+    <meta name="description" content="Explore Cinemaway's range of creative services from movies and documentaries to immersive 3D production.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=35">
+</head>
+<body class="services-page">
+
+    <!-- ================================================
+         SERVICES HEADER — Unified Morphing Navbar
+         ================================================ -->
+    <nav class="navbar navbar-services-active" id="navbar">
+        <a href="index.html" class="logo">
+            <img src="assets/images/Logo-icon.png" alt="Cinemaway Logo" class="logo-img">
+        </a>
+        <div class="nav-stack">
+            <div class="nav-title-row">
+                <h2 class="active-page-title"><span class="title-text">Services</span><span class="dot">.</span></h2>
+            </div>
+            <ul class="nav-links">
+                <li class="link-item link-projects"><a href="projects.html">Projects</a></li>
+                <li class="link-item link-services"><a href="services.html">Services</a></li>
+                <li class="link-item link-about"><a href="index.html#about">About</a></li>
+                <li class="link-item link-contact"><a href="index.html#connect">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ================================================
+         CENTER SERVICES CONTENT (Mockup Layout)
+         ================================================ -->
+    <main class="services-page-main">
+        <div class="se-container-inner">
+            
+            <!-- Three Glowing Cards Row -->
+            <div class="se-cards-row" id="se-cards-row">
+                <!-- Card 1: Movies -->
+                <div class="se-card-wrapper" data-service="movies">
+                    <img src="assets/images/CD movies.png" alt="" class="se-cd-image">
+                    <div class="se-page-card se-movies-card">
+                        <div class="se-card-content">
+                            <h3 class="se-card-title">Movies</h3>
+                            <p class="se-card-subtitle">Discover the latest and greatest films</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 2: Documentaries -->
+                <div class="se-card-wrapper" data-service="docs">
+                    <img src="assets/images/CD doc.png" alt="" class="se-cd-image">
+                    <div class="se-page-card se-docs-card">
+                        <div class="se-card-content">
+                            <h3 class="se-card-title">Documentaries</h3>
+                            <p class="se-card-subtitle">Real stories, real impact</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card 3: 3D -->
+                <div class="se-card-wrapper" data-service="td">
+                    <img src="assets/images/CD 3d.png" alt="" class="se-cd-image">
+                    <div class="se-page-card se-td-card">
+                        <div class="se-card-content">
+                            <h3 class="se-card-title">3D</h3>
+                            <p class="se-card-subtitle">Curated just for your taste</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Description Block -->
+            <div class="se-desc-block" id="se-desc-block">
+                <div class="se-desc-left">
+                    <h2 class="se-our-services" id="se-desc-title">OUR SERVICES <span class="dot">.</span></h2>
+                </div>
+                <div class="se-desc-right">
+                    <h3 class="se-lead" id="se-desc-lead">We craft cinematic visuals that transform ideas into immersive experiences.</h3>
+                    <p class="se-paragraph" id="se-desc-paragraph">Cinemaway combines storytelling, technology, and visual artistry to produce impactful cinematic content for brands, audiences, and creators.</p>
+                    <ul class="se-bullets-list" id="se-desc-bullets"></ul>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <!-- ================================================
+         PROJECT BRIEF FORM — Slide-in on service click
+         ================================================ -->
+    <section id="brief-section" class="brief-section">
+        <div class="brief-inner">
+
+            <!-- Section Header -->
+            <div class="brief-header">
+                <h2 class="brief-title">Start Your Project <span class="dot">.</span></h2>
+                <p class="brief-subtitle">Tell us about your vision and we'll bring it to life.</p>
+            </div>
+
+            <form id="brief-form" class="brief-form" novalidate>
+
+                <!-- ======== Personal Information ======== -->
+                <fieldset class="brief-fieldset">
+                    <legend class="brief-legend">Personal Information</legend>
+                    <div class="brief-grid brief-grid-2">
+                        <div class="brief-field">
+                            <label for="bf-fullname">Full Name <span class="req">*</span></label>
+                            <input type="text" id="bf-fullname" name="full_name" required placeholder="Your full name">
+                            <span class="field-error" id="err-fullname"></span>
+                        </div>
+                        <div class="brief-field">
+                            <label for="bf-company">Company / Organization</label>
+                            <input type="text" id="bf-company" name="company" placeholder="Your company">
+                        </div>
+                        <div class="brief-field">
+                            <label for="bf-email">Email Address <span class="req">*</span></label>
+                            <input type="email" id="bf-email" name="email" required placeholder="you@email.com">
+                            <span class="field-error" id="err-email"></span>
+                        </div>
+                        <div class="brief-field">
+                            <label for="bf-phone">Phone Number</label>
+                            <input type="tel" id="bf-phone" name="phone" placeholder="+1 234 567 890">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- ======== Project Information ======== -->
+                <fieldset class="brief-fieldset">
+                    <legend class="brief-legend">Project Information</legend>
+                    <div class="brief-grid brief-grid-2">
+                        <div class="brief-field">
+                            <label for="bf-project-title">Project Title <span class="req">*</span></label>
+                            <input type="text" id="bf-project-title" name="project_title" required placeholder="Give your project a name">
+                            <span class="field-error" id="err-project-title"></span>
+                        </div>
+                        <div class="brief-field">
+                            <label for="bf-project-type">Project Type</label>
+                            <select id="bf-project-type" name="project_type">
+                                <option value="" disabled selected>Select a type…</option>
+                                <option value="Film Production">Film Production</option>
+                                <option value="Documentary">Documentary</option>
+                                <option value="Commercial / Advertisement">Commercial / Advertisement</option>
+                                <option value="Corporate Video">Corporate Video</option>
+                                <option value="TV Program">TV Program</option>
+                                <option value="Motion Graphics">Motion Graphics</option>
+                                <option value="Photography">Photography</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="brief-field brief-field-full">
+                        <label for="bf-description">Project Description <span class="req">*</span></label>
+                        <textarea id="bf-description" name="project_description" required rows="5" placeholder="Describe your project, goals, and creative vision…"></textarea>
+                        <span class="field-error" id="err-description"></span>
+                    </div>
+                </fieldset>
+
+                <!-- ======== Services Needed ======== -->
+                <fieldset class="brief-fieldset">
+                    <legend class="brief-legend">Services Needed</legend>
+                    <div class="brief-checkbox-grid">
+                        <label class="brief-checkbox">
+                            <input type="checkbox" name="services_needed" value="Pre-Production">
+                            <span class="check-box"></span>
+                            <span class="check-label">Pre-Production</span>
+                        </label>
+                        <label class="brief-checkbox">
+                            <input type="checkbox" name="services_needed" value="Script Writing">
+                            <span class="check-box"></span>
+                            <span class="check-label">Script Writing</span>
+                        </label>
+                        <label class="brief-checkbox">
+                            <input type="checkbox" name="services_needed" value="Filming">
+                            <span class="check-box"></span>
+                            <span class="check-label">Filming</span>
+                        </label>
+                        <label class="brief-checkbox">
+                            <input type="checkbox" name="services_needed" value="Photography">
+                            <span class="check-box"></span>
+                            <span class="check-label">Photography</span>
+                        </label>
+                        <label class="brief-checkbox">
+                            <input type="checkbox" name="services_needed" value="Video Editing">
+                            <span class="check-box"></span>
+                            <span class="check-label">Video Editing</span>
+                        </label>
+                        <label class="brief-checkbox">
+                            <input type="checkbox" name="services_needed" value="Motion Graphics">
+                            <span class="check-box"></span>
+                            <span class="check-label">Motion Graphics</span>
+                        </label>
+                        <label class="brief-checkbox">
+                            <input type="checkbox" name="services_needed" value="Sound Design">
+                            <span class="check-box"></span>
+                            <span class="check-label">Sound Design</span>
+                        </label>
+                        <label class="brief-checkbox">
+                            <input type="checkbox" name="services_needed" value="Color Grading">
+                            <span class="check-box"></span>
+                            <span class="check-label">Color Grading</span>
+                        </label>
+                        <label class="brief-checkbox">
+                            <input type="checkbox" name="services_needed" value="Full Production Service">
+                            <span class="check-box"></span>
+                            <span class="check-label">Full Production Service</span>
+                        </label>
+                    </div>
+                </fieldset>
+
+                <!-- ======== Project Details ======== -->
+                <fieldset class="brief-fieldset">
+                    <legend class="brief-legend">Project Details</legend>
+                    <div class="brief-grid brief-grid-2">
+                        <div class="brief-field">
+                            <label for="bf-budget">Estimated Budget</label>
+                            <select id="bf-budget" name="estimated_budget">
+                                <option value="" disabled selected>Select a range…</option>
+                                <option value="Under $5,000">Under $5,000</option>
+                                <option value="$5,000 - $15,000">$5,000 – $15,000</option>
+                                <option value="$15,000 - $50,000">$15,000 – $50,000</option>
+                                <option value="$50,000 - $100,000">$50,000 – $100,000</option>
+                                <option value="$100,000+">$100,000+</option>
+                                <option value="Not sure yet">Not sure yet</option>
+                            </select>
+                        </div>
+                        <div class="brief-field">
+                            <label for="bf-deadline">Desired Deadline</label>
+                            <input type="date" id="bf-deadline" name="desired_deadline">
+                        </div>
+                        <div class="brief-field">
+                            <label for="bf-location">Project Location</label>
+                            <input type="text" id="bf-location" name="project_location" placeholder="City, Country">
+                        </div>
+                        <div class="brief-field">
+                            <label for="bf-references">Reference Links</label>
+                            <input type="url" id="bf-references" name="reference_links" placeholder="https://…">
+                        </div>
+                    </div>
+                    <div class="brief-field brief-field-full">
+                        <label for="bf-notes">Additional Notes</label>
+                        <textarea id="bf-notes" name="additional_notes" rows="3" placeholder="Anything else you'd like us to know…"></textarea>
+                    </div>
+                </fieldset>
+
+                <!-- ======== Submit ======== -->
+                <div class="brief-submit-row">
+                    <button type="submit" class="btn btn-primary btn-brief-submit" id="bf-submit">
+                        <span class="btn-text">Submit Brief</span>
+                        <span class="btn-loader" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </form>
+
+            <!-- Success Overlay -->
+            <div class="brief-success" id="brief-success">
+                <div class="brief-success-inner">
+                    <div class="success-checkmark">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="30" stroke="#EBC283" stroke-width="2"/>
+                            <path d="M20 32L28 40L44 24" stroke="#EBC283" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="success-title">Brief Submitted!</h3>
+                    <p class="success-msg">Thank you for contacting CinemaWay. Our team will review your project and contact you shortly.</p>
+                    <p class="success-id" id="success-project-id"></p>
+                    <button type="button" class="btn btn-primary btn-success-close" id="brief-success-close">Done</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================================================
+         FOOTER — 43px, Figma exact
+         ================================================ -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <!-- LEFT -->
+            <div class="footer-left">
+                <img src="assets/images/Logo-icon.png" alt="Cinemaway Logo" class="footer-logo-img">
+                <div class="footer-brand">
+                    <span class="brand-name">CINEMAWAY</span>
+                    <p class="footer-text">Crafting cinematic experiences through storytelling, visuals, and emotion.</p>
+                </div>
+            </div>
+
+            <!-- CENTER: dashed line -->
+            <div class="footer-line"></div>
+
+            <!-- RIGHT: socials + copyright -->
+            <div class="footer-right">
+                <div class="footer-socials-row">
+                    <div class="social-item">
+                        <img src="assets/images/IG.svg" alt="Instagram" class="social-icon">
+                        <span>cinemaway</span>
+                    </div>
+                    <div class="social-item">
+                        <img src="assets/images/IN.svg" alt="LinkedIn" class="social-icon">
+                        <span>cinemaway</span>
+                    </div>
+                </div>
+                <div class="footer-copy-row">
+                    <p class="footer-copy">© 2026 Cinemaway.</p>
+                </div>
+            </div>
+
+            <!-- FAR RIGHT: pilicule -->
+            <img src="assets/images/pilicule.svg" alt="" class="pilicule-icon" aria-hidden="true">
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="js/script.js?v=32"></script>
+</body>
+</html>

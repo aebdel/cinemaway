@@ -1,0 +1,23 @@
+{
+  "name": "cinemaway",
+  "version": "1.0.0",
+  "description": "CinemaWay — Cinematic Production Studio Website Backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "nodemailer": "^6.9.16",
+    "sql.js": "^1.14.1",
+    "uuid": "^11.1.0"
+  },
+  "keywords": [
+    "cinema",
+    "production",
+    "studio"
+  ],
+  "author": "CinemaWay",
+  "license": "ISC"
+}

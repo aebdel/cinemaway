@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemaway | Projects Gallery</title>
+    <meta name="description" content="Explore Cinemaway's projects gallery. We welcome you to join our cinematic journey.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=35">
+</head>
+<body class="projects-page">
+
+    <!-- ================================================
+         3D TICKET COLLAGE BACKGROUND (Spline Viewer)
+         ================================================ -->
+    <div class="projects-bg-container">
+        <!-- Desktop Spline -->
+        <iframe id="spline-bg" src="https://my.spline.design/3dticketcopycopy-dJ7mg0X8oNcmC00MzSUQqLgE-HCN/" class="spline-desktop" frameborder="0" width="100%" height="100%" style="border: none; display: block; margin: 0; padding: 0; overflow: hidden; background: #000;"></iframe>
+        <!-- Mobile Spline -->
+        <iframe id="spline-bg-mobile" src="https://my.spline.design/3dticketcopycopy-dJ7mg0X8oNcmC00MzSUQqLgE-AIM/" class="spline-mobile" frameborder="0" width="100%" height="100%" style="border: none; display: none; margin: 0; padding: 0; overflow: hidden; background: #000;"></iframe>
+        
+        <div class="spline-logo-mask"></div>
+    </div>
+
+    <!-- ================================================
+         PROJECTS HEADER — Figma: 1334×200px
+         ================================================ -->
+    <nav class="navbar navbar-projects-active" id="navbar">
+        <a href="index.html" class="logo">
+            <img src="assets/images/Logo-icon.png" alt="Cinemaway Logo" class="logo-img">
+        </a>
+        <div class="nav-stack">
+            <div class="nav-title-row">
+                <h2 class="active-page-title"><span class="title-text">Projects</span><span class="dot">.</span></h2>
+            </div>
+            <ul class="nav-links">
+                <li class="link-item link-projects"><a href="projects.html">Projects</a></li>
+                <li class="link-item link-services"><a href="services.html">Services</a></li>
+                <li class="link-item link-about"><a href="index.html#about">About</a></li>
+                <li class="link-item link-contact"><a href="index.html#connect">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ================================================
+         CENTER GALLERY CONTENT (Title + Subtitle + Check Button)
+         ================================================ -->
+    <main class="projects-gallery-main">
+        <!-- Entrance View (State 1) -->
+        <div class="gallery-center-content reveal-scale" id="entrance-view">
+            <h1 class="gallery-title">gallery <span class="dot">.</span></h1>
+            <p class="gallery-subtitle">we welcome you to join us</p>
+            <div class="gallery-action-block">
+                <button class="btn btn-primary btn-explore" id="btn-check-projects">Check</button>
+            </div>
+        </div>
+
+        <!-- Project Selection View (State 2 - Explore Layout) -->
+        <div class="projects-explore-overlay" id="projects-explore-view" style="display: none;">
+            <!-- Left Column: Clickable Project Titles List -->
+            <div class="pe-left-col">
+                <ul class="pe-project-list">
+                    <li class="pe-project-item" data-project="fckprblms">
+                        <span class="pe-title-text">FCKPRBLMS</span><span class="dot">.</span>
+                    </li>
+                    <li class="pe-project-item" data-project="light">
+                        <span class="pe-title-text">LET THE LIGHT</span><span class="dot">.</span>
+                    </li>
+                    <li class="pe-project-item" data-project="ali">
+                        <span class="pe-title-text">MUHAMMAD ALI</span><span class="dot">.</span>
+                    </li>
+                    <li class="pe-project-item" data-project="wwii">
+                        <span class="pe-title-text">WORLD WAR II</span><span class="dot">.</span>
+                    </li>
+                </ul>
+                <div class="pe-project-detail-info">
+                    <span class="pe-detail-subtitle" id="pe-detail-subtitle"></span>
+                    <p class="pe-detail-description" id="pe-detail-description"></p>
+                </div>
+            </div>
+
+            <!-- Center Column: Active Project Cover Display -->
+            <div class="pe-center-col">
+                <div class="pe-cover-container">
+                    <img src="assets/images/_ (2).jpeg" id="cover-fckprblms" class="pe-cover-img" alt="FCKPRBLMS Cover">
+                    <img src="assets/images/_ (6).jpeg" id="cover-light" class="pe-cover-img" alt="LET THE LIGHT Cover">
+                    <img src="assets/images/_ (10).jpeg" id="cover-ali" class="pe-cover-img" alt="MUHAMMAD ALI Cover">
+                    <img src="assets/images/_ (11).jpeg" id="cover-wwii" class="pe-cover-img" alt="WORLD WAR II Cover">
+                </div>
+            </div>
+
+            <div class="pe-right-col">
+                <!-- Action Button -->
+                <div class="pe-action-block">
+                    <div class="pe-crow-above-btn">
+                        <img src="assets/images/Crow svg.svg" alt="Crow" class="pe-crow-img">
+                    </div>
+                    <button class="btn btn-primary btn-explore" id="btn-explore-check">Check</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detail View / Short Film View (State 3 - triggered by Enter key) -->
+        <div class="short-film-view" id="short-film-view" style="display: none;">
+            <div class="sf-right-col">
+                <div class="sf-back-container">
+                    <button class="btn-back" id="btn-sf-back">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12H5M5 12L12 19M5 12L12 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Back</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ================================================
+         FOOTER — 43px, Figma exact
+         ================================================ -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <!-- LEFT -->
+            <div class="footer-left">
+                <img src="assets/images/Logo-icon.png" alt="Cinemaway Logo" class="footer-logo-img">
+                <div class="footer-brand">
+                    <span class="brand-name">CINEMAWAY</span>
+                    <p class="footer-text">Crafting cinematic experiences through storytelling, visuals, and emotion.</p>
+                </div>
+            </div>
+
+            <!-- CENTER: dashed line -->
+            <div class="footer-line"></div>
+
+            <!-- RIGHT: socials + copyright -->
+            <div class="footer-right">
+                <div class="footer-socials-row">
+                    <div class="social-item">
+                        <img src="assets/images/IG.svg" alt="Instagram" class="social-icon">
+                        <span>cinemaway</span>
+                    </div>
+                    <div class="social-item">
+                        <img src="assets/images/IN.svg" alt="LinkedIn" class="social-icon">
+                        <span>cinemaway</span>
+                    </div>
+                </div>
+                <div class="footer-copy-row">
+                    <p class="footer-copy">© 2026 Cinemaway.</p>
+                </div>
+            </div>
+
+            <!-- FAR RIGHT: pilicule -->
+            <img src="assets/images/pilicule.svg" alt="" class="pilicule-icon" aria-hidden="true">
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="js/script.js?v=32"></script>
+</body>
+</html>

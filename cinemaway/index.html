@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinemaway | Experience Cinema</title>
+    <meta name="description" content="Experience cinema like never before. CinemaWay — a creative production studio crafting cinematic stories.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=35">
+</head>
+<body>
+
+    <!-- ================================================
+         NAVIGATION — Fixed, blurred, liens contenus
+         Figma: 1334×139px, gradient, blur(4px), radius 28px
+         ================================================ -->
+    <nav class="navbar" id="navbar">
+        <a href="index.html" class="logo">
+            <img src="assets/images/Logo-icon.png" alt="Cinemaway Logo" class="logo-img">
+        </a>
+        <div class="nav-stack">
+            <div class="nav-title-row">
+                <h2 class="active-page-title"><span class="title-text"></span><span class="dot">.</span></h2>
+            </div>
+            <ul class="nav-links">
+                <li class="link-item link-projects"><a href="projects.html">Projects</a></li>
+                <li class="link-item link-services"><a href="services.html">Services</a></li>
+                <li class="link-item link-about"><a href="#about">About</a></li>
+                <li class="link-item link-contact"><a href="#connect">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ================================================
+         HERO — Video background en loop
+         ================================================ -->
+    <header class="hero" id="home">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="assets/images/animation.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Experience cinema<br>like never before.</h1>
+            <p>Step into a world where every film becomes an unforgettable journey. With CinemaWay, explore, watch, and enjoy the best of cinema anytime, anywhere.</p>
+        </div>
+    </header>
+
+    <!-- ================================================
+         PROJECTS — Pas de fond flou
+         Bouton "Check" avec icône flèche
+         ================================================ -->
+    <section class="projects" id="projects">
+        <div class="section-inner">
+            <h2 class="reveal-hidden">PROJECTS <span class="dot">.</span></h2>
+            <p class="subtitle reveal-hidden">From concept to final frame, we bring ideas to life through cinematic storytelling, cutting-edge technology, and a passion for visual excellence.</p>
+        </div>
+
+        <!-- Spline animation pleine largeur -->
+        <div class="projects-visual reveal-scale">
+            <!-- Desktop Spline -->
+            <iframe src="https://my.spline.design/3dticketcopycopy-dJ7mg0X8oNcmC00MzSUQqLgE-FZf/?v=3" width="100%" height="100%" class="spline-desktop" style="border: none; display: block; margin: 0; padding: 0; overflow: hidden;"></iframe>
+            <!-- Mobile Spline -->
+            <iframe src="https://my.spline.design/3dticketcopycopy-dJ7mg0X8oNcmC00MzSUQqLgE-4j6/" width="100%" height="100%" class="spline-mobile" style="border: none; display: none; margin: 0; padding: 0; overflow: hidden;"></iframe>
+
+            <!-- Cache logo Spline -->
+            <div class="spline-logo-mask"></div>
+
+            <!-- Bouton Check avec icône -->
+            <div class="projects-action reveal-hidden">
+                <div class="crow-above-btn">
+                    <img src="assets/images/Crow svg.svg" alt="Crow" class="crow-btn-img crow-projects">
+                </div>
+                <a href="projects.html" class="btn btn-primary btn-icon">
+                    <span>Check</span>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M3 8H13M13 8L8.5 3.5M13 8L8.5 12.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================
+         SERVICES — 3 cards avec images CD Cover
+         ================================================ -->
+    <section class="services" id="services">
+        <div class="section-inner">
+            <h2 class="reveal-hidden">Services <span class="dot">.</span></h2>
+            <p class="subtitle reveal-hidden">At CinemaWay, we combine storytelling, design, and advanced production techniques to deliver high-quality visual content tailored to brands, agencies, and creators.</p>
+            <div class="services-grid">
+                <a href="services.html" class="service-card movies-card reveal-hidden">
+                    <h3>Movies</h3>
+                    <p>Discover the latest and greatest films</p>
+                </a>
+                <a href="services.html" class="service-card docs-card reveal-hidden">
+                    <h3>Documentaries</h3>
+                    <p>Real stories, real impact</p>
+                </a>
+                <a href="services.html" class="service-card td-card reveal-hidden">
+                    <h3>3D</h3>
+                    <p>Immersive experiences</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================
+         ABOUT — Crow-2.svg + bouton More
+         ================================================ -->
+    <section class="about" id="about">
+        <div class="section-inner">
+            <h2 class="reveal-hidden">About <span class="dot">.</span></h2>
+            <p class="subtitle reveal-hidden">Cinemaway is a creative production studio crafting cinematic stories through films, commercials, and visual experiences designed to leave a lasting impact.</p>
+            <div class="btn-with-crow reveal-hidden">
+                <div class="crow-above-btn">
+                    <img src="assets/images/Crow-2.svg" alt="Crow" class="crow-btn-img crow-2">
+                </div>
+                <button class="btn btn-primary">More</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================
+         LET'S CONNECT
+         Image light.jpg à sa taille naturelle, synchronisée bg
+         ================================================ -->
+    <section class="connect" id="connect">
+        <!-- Image à taille naturelle, non étirée, synchro avec bg noir -->
+        <img src="assets/images/image light.jpg?v=2" alt="" class="connect-bg-img reveal-scale" aria-hidden="true">
+        <div class="connect-overlay"></div>
+
+        <div class="connect-content section-inner">
+            <div class="connect-text reveal-hidden">
+                <h2>Let's connect <span class="dot">.</span></h2>
+                <p class="connect-lead">Tell us about your next cinematic project.</p>
+                <p class="pre-title">Whether it's a film, commercial, or event, Cinemaway transforms ideas into visual experiences.</p>
+            </div>
+            <div class="connect-action reveal-hidden">
+                <div class="btn-with-crow">
+                    <div class="crow-above-btn">
+                        <img src="assets/images/Crow 3.svg" alt="Crow" class="crow-btn-img crow-3">
+                    </div>
+                    <button class="btn btn-primary">Contact Us</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================================
+         FOOTER — 43px, Figma exact
+         ================================================ -->
+    <footer class="footer">
+        <div class="footer-inner">
+            <!-- LEFT -->
+            <div class="footer-left">
+                <img src="assets/images/Logo-icon.png" alt="Cinemaway Logo" class="footer-logo-img">
+                <div class="footer-brand">
+                    <span class="brand-name">CINEMAWAY</span>
+                    <p class="footer-text">Crafting cinematic experiences through storytelling, visuals, and emotion.</p>
+                </div>
+            </div>
+
+            <!-- CENTER: dashed line -->
+            <div class="footer-line"></div>
+
+            <!-- RIGHT: socials + copyright -->
+            <div class="footer-right">
+                <div class="footer-socials-row">
+                    <div class="social-item">
+                        <img src="assets/images/IG.svg" alt="Instagram" class="social-icon">
+                        <span>cinemaway</span>
+                    </div>
+                    <div class="social-item">
+                        <img src="assets/images/IN.svg" alt="LinkedIn" class="social-icon">
+                        <span>cinemaway</span>
+                    </div>
+                </div>
+                <div class="footer-copy-row">
+                    <p class="footer-copy">© 2026 Cinemaway.</p>
+                </div>
+            </div>
+
+            <!-- FAR RIGHT: pilicule -->
+            <img src="assets/images/pilicule.svg" alt="" class="pilicule-icon" aria-hidden="true">
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="js/script.js?v=32"></script>
+</body>
+</html>
